@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 410px;
+    width: 100%;
+}
+
+.TBlogo {
+    max-width: 400px;
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.5));
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #444;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.cup {
+    max-width: 50px;
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.5));
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center; /* Align items in the center vertically */
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+@media (max-width: 600px) {
+    .logo {
+        max-width: 280px;
+        filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.5));
+    }
+
+    .cup {
+        max-width: 40px;
+        filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.5));
+    }
+    .nav-list li {
+        margin: 0 10px;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .logo {
+        max-width: 260px;
+        filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.5));
+    }
+
+    .cup {
+        max-width: 30px;
+        filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.5));
+    }
+    .nav-list li {
+        margin: 0 5px;
+    }
+}
