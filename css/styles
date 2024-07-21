@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    padding: 20px;
+}
+
+.TBlogo {
+    max-width: 100px;
+}
+
+@media (max-width: 600px) {
+    .logo {
+        max-width: 80px;
+    }
+}
+
+@media (max-width: 400px) {
+    .logo {
+        max-width: 60px;
+    }
+}
