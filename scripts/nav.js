@@ -1,15 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
     var navContent = `
         <nav>
-    <ul class="nav-list">
-      <img src="images/somethingfizzy.png" alt="Something Fizzy Drink" class="cup">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Contact</a></li>
-      <img src="images/purpledrizzle.png" alt="Purple Drizzle Drink" class="cup">
-    </ul>
-  </nav>
+            <img src="images/somethingfizzy.png" alt="Something Fizzy Drink" class="cup">
+            <ul class="nav-list">
+                <li><a href="#" onclick="loadPage('home')">Home</a></li>
+                <li><a href="#" onclick="loadPage('menu')">Menu</a></li>
+                <li><a href="#" onclick="loadPage('gallery')">Photos</a></li>
+                <li><a href="#" onclick="loadPage('contact')">Contact Us</a></li>
+                <li><a href="#" onclick="loadPage('join')">Join Us for a Drink</a></li>
+            </ul>
+            <img src="images/purpledrizzle.png" alt="Purple Drizzle Drink" class="cup">
+        </nav>
     `;
-    document.body.insertAdjacentHTML('afterbegin', navContent);
+    document.querySelector('header').insertAdjacentHTML('afterend', navContent);
 });
